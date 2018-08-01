@@ -1,0 +1,19 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: litmus-openebs
+  namespace: litmus 
+spec:
+  template:
+    metadata:
+      name: litmus
+    spec:
+      serviceAccountName: litmus
+      restartPolicy: Never
+      containers:
+      - name: ansibletest
+        image: ashishranjan738/ansible-runner:latest
+        imagePullPolicy: IfNotPresent
+        command: ["/bin/bash"]
+        args: ["-c", "ansible-playbook ./openebs/openebs.yaml -i /etc/ansible/hosts -v; exit 0"]
