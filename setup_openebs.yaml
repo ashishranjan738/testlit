@@ -13,7 +13,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: ansibletest
-        image: ashishranjan738/ansible-runner:latest
+        image: ashishranjan738/ansible-runner
         imagePullPolicy: IfNotPresent
         command: ["/bin/bash"]
         args: ["-c", "ansible-playbook ./openebs/openebs.yaml -i /etc/ansible/hosts -v; exit 0"]
