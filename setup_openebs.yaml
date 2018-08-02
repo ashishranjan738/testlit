@@ -17,7 +17,6 @@ spec:
         imagePullPolicy: IfNotPresent
         env: 
           - name: ANSIBLE_STDOUT_CALLBACK
-            #value: log_plays
             value: actionable
         command: ["/bin/bash"]
         args: ["-c", "ansible-playbook ./openebs/openebs.yaml -i /etc/ansible/hosts -v; exit 0"]
