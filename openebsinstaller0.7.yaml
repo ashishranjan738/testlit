@@ -13,7 +13,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: ansibletest
-        image: openebs/ansible-runner:ci
+        image: ashishranjan738/ansible-runner-global:latest
         imagePullPolicy: IfNotPresent
         env: 
           - name: ANSIBLE_STDOUT_CALLBACK
