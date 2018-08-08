@@ -14,7 +14,7 @@ spec:
       containers:
       - name: ansibletest
         image: ashishranjan738/ansible-runner-global:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         env: 
           - name: mountPath
             value: /mnt/openebs
