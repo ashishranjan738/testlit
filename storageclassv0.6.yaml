@@ -13,7 +13,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: ansibletest
-        image: ashishranjan738/ansible-runner-s-0.6:lates
+        image: ashishranjan738/ansible-runner-s-0.6:latest
         imagePullPolicy: Always
         env: 
           - name: mountPath
