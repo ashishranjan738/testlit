@@ -13,7 +13,7 @@ spec:
       restartPolicy: Never
       containers:
       - name: ansibletest
-        image: openebs/ansible-runner:ci
+        image: ashishranjan738/storageclass-installer-0.7:latest
         imagePullPolicy: Always
         env: 
           - name: mountPath
