@@ -22,7 +22,7 @@ spec:
             value: actionable
           # Enable storageclass
           - name: DELETE_JIVA
-            value: "true"
+            value: "false"
           - name: DELETE_CSTOR
             value: "true"
           # Jiva configuration
