@@ -48,6 +48,6 @@ spec:
           - name: CSTOR_STORAGECLASS_NAME
             value: openebs-cstore-test
           - name: DISK_LIST
-            value: disk-1c05ac3ef8d84d34c9a7608b7dfe8eac,disk-3a2506752143dabf5e222ae46e6e40ab,disk-934bdf4927cb05b1129f9e7a8fb59c87
+            value: 
         command: ["/bin/bash"]
         args: ["-c", "ansible-playbook ./storageclass/0.7/ansible/storageclass_setup.yaml -i /etc/ansible/hosts -vv"]
