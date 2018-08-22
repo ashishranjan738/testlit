@@ -19,7 +19,7 @@ spec:
           - name: mountPath
             value: /mnt/openebs
           - name: ANSIBLE_STDOUT_CALLBACK
-            value: actionable
+            value: default
           # Enable storageclass
           - name: APPLY_JIVA
             value: "false"
